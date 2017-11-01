@@ -1,0 +1,59 @@
+<div class="container">
+  <h1>Angular Calculator</h1>
+</div>
+
+
+<div class="container">
+  <div class="row">
+    <button (click)="onCombineFormula('1')">1</button>
+    <button (click)="onCombineFormula('2')">2</button>
+    <button (click)="onCombineFormula('3')">3</button>
+  </div>
+
+  <div class="row">
+    <button (click)="onFour()">4</button>
+    <button (click)="onFive()">5</button>
+    <button (click)="onSix()">6</button>
+  </div>
+
+  <div class="row">
+    <button (click)="onSeven()">7</button>
+    <button (click)="onEight()">8</button>
+    <button (click)="onNine()">9</button>
+  </div>
+
+  <div class="row">
+    <button></button>
+    <button (click)="onZero()">0</button>
+    <button></button>
+  </div>
+  <br/>
+
+  <div class="row">
+  <button (click)="onPlus()">+</button>
+  <button (click)="onMinus()">-</button>
+  <button (click)="onDivide()">/</button>
+  <button (click)="onMultiply()">*</button>
+  <button style="font:bold" (click)="onEqualClick()">=</button>
+  </div>
+
+<p></p>
+
+  <div>
+      <input type="text" class="form-control">
+    </div>
+<p></p>
+
+  <div>
+    <button (click)="onFtoC()">F to C</button>
+    <button (click)="onCtoF()">C to F</button>
+  </div>
+ 
+  <h2>{{firstPart}}</h2>
+  <h3>Result: {{result}}</h3> 
+</div>
+
+<p>
+  History:(newest first)
+</p>
+<label>Calculation:</label>
